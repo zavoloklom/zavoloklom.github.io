@@ -114,7 +114,7 @@
     <script>
         setTimeout(function() { 
         var console = document.querySelector('#console');
-        console.innerHTML = '<x'+'mp>' + document.getElementsByTagName('html')[0].innerHTML + '</x'+'mp>';
+        console.innerText = document.getElementsByTagName('html')[0].innerHTML;
         }, 3000);
     </script>
     
