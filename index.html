@@ -39,7 +39,18 @@
     
 <!-- Push.World -->
     <script>
-        var pw = {};
+        
+        window.addEventListener("error", handleError, true);
+
+function handleError(evt) {
+    if (evt.message) { // Chrome sometimes provides this
+      alert("error: "+evt.message +" at linenumber: "+evt.lineno+" of file: "+evt.filename);
+    } else {
+      alert("error: "+evt.type+" from element: "+(evt.srcElement || evt.target));
+    }
+}
+        
+        //var pw = {};
         pw.websiteId= "65b449a788fd2952460a645b5187287ee631b6fab4233508eff48d2d8769079b";
         
         document.addEventListener('pw:init', function(e) {
