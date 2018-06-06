@@ -709,6 +709,7 @@ window.onerror = function(message, url, line) {
                             value: function() {
                                 var e = window.navigator.userAgent,
                                     t = void 0;
+                                console.log(/(OPR|Opera)\/(\d+)\./.test(e));
                                 return !/(OPR|Opera)\/(\d+)\./.test(e) || !!(t = e.match(/(OPR|Opera)\/(\d+)\./)[2]) && parseInt(t) > 39
                             }
                         }, {
