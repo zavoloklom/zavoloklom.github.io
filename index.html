@@ -709,7 +709,7 @@ window.onerror = function(message, url, line) {
                             value: function() {
                                 var e = window.navigator.userAgent,
                                     t = void 0;
-                                return !/Opera/.test(e) || !!(t = e.match(/(Opera)\/(\d+)\./)[2]) && parseInt(t) > 39
+                                return !/(OPR|Opera)\/(\d+)\./.test(e) || !!(t = e.match(/(OPR|Opera)\/(\d+)\./)[2]) && parseInt(t) > 39
                             }
                         }, {
                             key: "isPromise",
