@@ -39,8 +39,35 @@
     
 <!-- Push.World -->
     <script>
+        !function(e,t,d,s,a,n,c){e[a]={},
+        e[a].date=(new Date).getTime(),n=t.createElement(d),
+        c=t.getElementsByTagName(d)[0],
+        n.type="text/javascript",n.async=!0,n.src=s,
+        c.parentNode.insertBefore(n,c)}(window,document,"script",
+        "https://zavoloklomgithubio.push.world/embed.js","pw"),
+        pw.websiteId=
+        "65b449a788fd2952460a645b5187287ee631b6fab4233508eff48d2d8769079b";
+        
+        document.addEventListener('pw:init', function(e) {
+            var data = e.detail;
+            console.log('pw:init', data);
+            
+            var div = document.querySelector('#device_id');
+            
+            div.innerHTML = data['device_id'];
+
+            if (data.permission === 'default') {
+                btn.addEventListener('click', function() {
+                    document.dispatchEvent(new CustomEvent('pw:request_permissions'));
+                    btn.remove()
+                })
+            } else {
+                btn.remove()
+            }
+        }, false);
+    
         var test = document.querySelector('#device_id');
-        test.innerHTML = 'new test';
+        test.innerHTML = 'new test 2';
     </script>
  
 <!-- Google Analytics -->
