@@ -41,75 +41,9 @@
     <script>
         var test = document.querySelector('#device_id');
         test.innerHTML = 'test';
-        
-        !function(e,t,d,s,a,n,c){e[a]={},
-        e[a].date=(new Date).getTime(),n=t.createElement(d),
-        c=t.getElementsByTagName(d)[0],
-        n.type="text/javascript",n.async=!0,n.src=s,
-        c.parentNode.insertBefore(n,c)}(window,document,"script",
-        "https://zavoloklomgithubio.push.world/embed.js","pw"),
-        pw.websiteId=
-        "65b449a788fd2952460a645b5187287ee631b6fab4233508eff48d2d8769079b";
-        
-        document.addEventListener('pw:init', function(e) {
-            var data = e.detail;
-            console.log('pw:init', data);
-            
-            var div = document.querySelector('#device_id');
-            
-            div.innerHTML = data['device_id'];
-
-            if (data.permission === 'default') {
-                btn.addEventListener('click', function() {
-                    document.dispatchEvent(new CustomEvent('pw:request_permissions'));
-                    btn.remove()
-                })
-            } else {
-                btn.remove()
-            }
-        }, false);
     </script>
-    
-<!-- Google Analytics -->
-<script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-56068812-3', 'auto');
-    ga('send', 'pageview');
-
-</script>
-<!-- /Google Analytics -->
-
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-    (function (d, w, c) {
-        (w[c] = w[c] || []).push(function() {
-            try {
-                w.yaCounter27687525 = new Ya.Metrika({id:27687525,
-                    webvisor:true,
-                    clickmap:true,
-                    trackLinks:true,
-                    accurateTrackBounce:true,
-                    trackHash:true});
-            } catch(e) { }
-        });
-
-        var n = d.getElementsByTagName("script")[0],
-                s = d.createElement("script"),
-                f = function () { n.parentNode.insertBefore(s, n); };
-        s.type = "text/javascript";
-        s.async = true;
-        s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
-
-        if (w.opera == "[object Opera]") {
-            d.addEventListener("DOMContentLoaded", f, false);
-        } else { f(); }
-    })(document, window, "yandex_metrika_callbacks");
-</script>
-<noscript><div><img src="//mc.yandex.ru/watch/27687525" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+ 
+<noscript><div>NO JS</div></noscript>
 <!-- /Yandex.Metrika counter -->
 </body>
 </html>
