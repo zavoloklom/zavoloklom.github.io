@@ -34,6 +34,8 @@
     <strong>Material Design</strong> Iconic Font
 </h1>
 <div class="pw-buttons"></div>
+<div id="device_id"></div>
+    <div id="console"></div>
     
 <!-- Push.World -->
     <script>
@@ -45,6 +47,24 @@
         "https://zavoloklomgithubio.push.world/embed.js","pw"),
         pw.websiteId=
         "65b449a788fd2952460a645b5187287ee631b6fab4233508eff48d2d8769079b";
+        
+        document.addEventListener('pw:init', function(e) {
+            var data = e.detail;
+            console.log('pw:init', data);
+            
+            var div = document.querySelector('#device_id');
+            
+            div.innerHTML = data['device_id'];
+
+            if (data.permission === 'default') {
+                btn.addEventListener('click', function() {
+                    document.dispatchEvent(new CustomEvent('pw:request_permissions'));
+                    btn.remove()
+                })
+            } else {
+                btn.remove()
+            }
+        }, false);
     </script>
     
 <!-- Google Analytics -->
