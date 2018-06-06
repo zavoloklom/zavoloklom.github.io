@@ -39,9 +39,6 @@
     
 <!-- Push.World -->
     <script>
-        var console = document.querySelector('#console');
-        console.innerHTML = document.getElementsByTagName('html')[0].innerHTML;
-        
         !function(e,t,d,s,a,n,c){e[a]={},
         e[a].date=(new Date).getTime(),n=t.createElement(d),
         c=t.getElementsByTagName(d)[0],
@@ -114,5 +111,10 @@
 </script>
 <noscript><div><img src="//mc.yandex.ru/watch/27687525" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 
+    <script>
+        var console = document.querySelector('#console');
+        console.innerHTML = '<xmp>' + document.getElementsByTagName('html')[0].innerHTML + '</xmp>';
+    </script>
+    
 </body>
 </html>
