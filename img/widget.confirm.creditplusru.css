@@ -121,7 +121,7 @@
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
     position: fixed;
-    top: 30px;
+    bottom: 40px;
     left: 40px;
     margin: 0;
     width: 420px;
