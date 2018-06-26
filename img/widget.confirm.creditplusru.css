@@ -76,6 +76,7 @@
         left: 0 !important;
         margin: 0 !important;
         top: 0 !important;
+        bottom: auto !important;
         width: 100% !important;
         -moz-border-radius: 0;
         -webkit-border-radius: 0;
@@ -91,10 +92,13 @@
         top: 0 !important;
     }
     #pw-confirm-custom .pw-confirm-custom__wrapp {
-        padding: 20px 20px 10px !important;
+        padding: 30px 40px !important;
     }
     #pw-confirm-custom .pw-confirm-custom__btn {
-        margin: 0 20px 10px 0 !important;
+        margin: 0 10px 10px 0 !important;
+        width: auto;
+        max-width: 100% !important;
+        display: block !important;
     }
 }
 @media only screen and (min-width: 481px) {
