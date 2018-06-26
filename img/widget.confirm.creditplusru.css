@@ -163,6 +163,19 @@
     letter-spacing: normal;
     font-family: 'Open Sans', Arial, sans-serif;
 }
+#pw-confirm-custom .pw-confirm-custom__close-sign {
+    position: absolute;
+    right: 14px;
+    top: 14px;
+    font-size: 40px;
+    line-height: 23px;
+    width: 23px;
+    color: #c4bbad;
+    font-family: 'Times New Roman', 'Courier New', Georgia, Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    cursor: pointer;
+}
+
 #pw-confirm-custom .pw-confirm-custom__content {
     text-align: left;
 }
