@@ -157,7 +157,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: left bottom;
-    padding: 60px 45px;
+    padding: 60px 35px 20px 35px;
     z-index: 13000;
     color: #424242;
     letter-spacing: normal;
@@ -213,7 +213,7 @@
     padding: 8px;
     margin: 0;
     font: 400 12px/16px 'Open Sans', 'Arial';
-    max-width: 45%;
+    max-width: 50%;
     cursor: pointer;
     text-decoration: none;
     min-height: inherit;
