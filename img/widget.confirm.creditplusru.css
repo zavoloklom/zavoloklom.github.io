@@ -129,6 +129,7 @@
     padding: 0;
     height: auto;
     background-color: #efe4d3;
+    background-size: cover;
     display: block !important;
     cursor: auto;
     z-index: 9999999;
@@ -165,7 +166,7 @@
     z-index: 13000;
     color: #424242;
     letter-spacing: normal;
-    font-family: Arial,sans-serif;
+    font-family: 'Open Sans', Arial, sans-serif;
 }
 #pw-confirm-custom .pw-confirm-custom__logo {
     -moz-border-radius: 3px;
@@ -204,7 +205,7 @@
     color: #212121;
     margin: 0 0 5px;
     padding: 0;
-    font: 700 14px/20px 'Arial';
+    font: 700 14px/20px 'Open Sans', 'Arial';
     min-height: 20px;
     width: auto;
     height: auto;
@@ -213,7 +214,7 @@
     padding: 0;
     color: #212121;
     margin: 0 0 15px;
-    font: 400 12px/16px 'Arial';
+    font: 400 12px/16px 'Open Sans', 'Arial';
     min-height: 20px;
     width: auto;
     height: auto;
@@ -246,7 +247,7 @@
     vertical-align: middle;
     padding: 0;
     margin: 0 20px 0 0;
-    font: 400 12px/22px 'Arial';
+    font: 400 12px/22px 'Open Sans', 'Arial';
     height: 24px;
     max-width: 120px;
     width: 140px;
@@ -287,7 +288,7 @@
 #pw-confirm-custom .pw-confirm-custom__footer #pw-confirm-custom__link {
     display: block;
     text-align: center;
-    font: 400 10px/24px 'Arial' !important;
+    font: 400 10px/24px 'Open Sans', 'Arial' !important;
     color: #a1a1a1;
     text-decoration: none !important;
 }
