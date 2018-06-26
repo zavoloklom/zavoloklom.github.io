@@ -99,9 +99,6 @@
 }
 @media only screen and (min-width: 481px) {
     #pw-confirm-custom.pw-confirm-custom {
-        -moz-border-radius: 3px;
-        -webkit-border-radius: 3px;
-        border-radius: 3px;
         -moz-animation-name: pw-fadeInUp;
         -webkit-animation-name: pw-fadeInUp;
         animation-name: pw-fadeInUp;
@@ -125,9 +122,9 @@
     left: 40px;
     margin: 0;
     width: 420px;
+    height: auto;
     font-size: 100%;
     padding: 0;
-    height: auto;
     background-color: #efe4d3;
     background-size: cover;
     display: block !important;
@@ -162,7 +159,8 @@
 }
 #pw-confirm-custom .pw-confirm-custom__wrapp {
     position: relative;
-    padding: 20px;
+    height: 212px;
+    padding: 45px 30px;
     z-index: 13000;
     color: #424242;
     letter-spacing: normal;
@@ -198,7 +196,6 @@
     text-align: center;
 }
 #pw-confirm-custom .pw-confirm-custom__content {
-    padding: 0 0 0 80px;
     text-align: left;
 }
 #pw-confirm-custom .pw-confirm-custom__title {
@@ -260,19 +257,21 @@
 #pw-confirm-custom .pw-confirm-custom__btn:focus {
     outline: none;
 }
-#pw-confirm-custom .pw-confirm-custom__btn--white {
-    background-color: #fff !important;
-    border: 1px solid #cccccc !important;
+#pw-confirm-custom .pw-confirm-custom__btn--subscribe {
+    background-color: transparent !important;
+    border: 2px solid #8ebf17 !important;
     color: #212121 !important;
+    text-transform: uppercase;
 }
-#pw-confirm-custom .pw-confirm-custom__btn--blue {
-    background-color: #4596fb !important;
-    border: 1px solid #50a1f8 !important;
-    color: #fff !important;
+#pw-confirm-custom .pw-confirm-custom__btn--close {
+    background-color: transparent !important;
+    border: none !important;
+    color: #7c7c7c !important;
+    font-size: 12px;
 }
-#pw-confirm-custom .pw-confirm-custom__btn:hover {
+#pw-confirm-custom .pw-confirm-custom__btn--subscribe:hover {
     text-decoration: none;
-    background-color: #fdd95b !important;
+    background-color: #8ebf17 !important;
     border-color: rgba(34, 28, 5, 0.4) !important;
     color: #212121 !important;
 }
